@@ -6,6 +6,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ECommerceComponent } from './e-commerce/e-commerce.component';
 import { NotFoundComponent } from './miscellaneous/not-found/not-found.component';
 import { Stepper1Component } from './stepper/stepper.component1';
+import { QuizComponent } from './quiz/quiz.component';
 
 const routes: Routes = [{
   path: '',
@@ -20,8 +21,8 @@ const routes: Routes = [{
       component: DashboardComponent,
     },
     {
-      path: 'test',
-      component: Stepper1Component,
+      path: 'quiz',
+      component: QuizComponent,
     },
     {
       path: 'layout',
@@ -73,9 +74,14 @@ const routes: Routes = [{
       loadChildren: () => import('./miscellaneous/miscellaneous.module')
         .then(m => m.MiscellaneousModule),
     },
+    // {
+    //   path: '',
+    //   redirectTo: 'dashboard',
+    //   pathMatch: 'full',
+    // },
     {
       path: '',
-      redirectTo: 'dashboard',
+      redirectTo: 'test',
       pathMatch: 'full',
     },
     {

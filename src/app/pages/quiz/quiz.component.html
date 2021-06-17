@@ -1,0 +1,1104 @@
+<div class="accordions-container row justify-content-md-center">
+  <div class="accordion-container col-md-8 col-lg-8">
+    <!-- <nb-card>
+      <nb-card-header>Toggle Accordion By Button</nb-card-header>
+      <nb-card-body>
+        <button nbButton (click)="toggle()">Toggle First Item</button>
+      </nb-card-body>
+    </nb-card> -->
+
+    <nb-accordion>
+      <nb-accordion-item #item>
+        <nb-accordion-item-header>
+          ÁREA I: ESQUEMA CORPORAL
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+          <p>Diagnosticar el conocimiento que el estudiante tiene de su
+            esquema corporal.
+            </p>
+          <nb-card>
+            <nb-card-header><b>a).</b> En su cuerpo señale las siguientes partes</nb-card-header>
+            <nb-card-body>
+              <div class="validation-checkboxes row justify-content-md-center">
+                <nb-checkbox status="success" class="col-md-2">Boca</nb-checkbox>
+                <nb-checkbox status="success" class="col-md-2">Ojos</nb-checkbox>
+                <nb-checkbox status="success" class="col-md-2">Nariz</nb-checkbox>
+                <nb-checkbox status="success" class="col-md-2">Dedo</nb-checkbox>
+              </div>
+            </nb-card-body>
+          </nb-card>
+
+
+          <nb-card>
+            <nb-card-header><b>b).</b> En su imagen (Frente a un espejo) Se pide señalar partes “finas o gruesas”</nb-card-header>
+            <nb-card-body>
+              <div class="validation-checkboxes row justify-content-md-center">
+                <nb-checkbox status="success" class="col-md-2">Cabeza</nb-checkbox>
+                <nb-checkbox status="success" class="col-md-2">Manos</nb-checkbox>
+                <nb-checkbox status="success" class="col-md-2">Piernas</nb-checkbox>
+                <nb-checkbox status="success" class="col-md-2">Ojos</nb-checkbox>
+              </div>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>c).</b> En otra persona. Se pide que señale las siguientes 4 partes gruesas</nb-card-header>
+            <nb-card-body>
+              <div class="validation-checkboxes row justify-content-md-center">
+                <nb-checkbox status="success" class="col-md-2">Brazos</nb-checkbox>
+                <nb-checkbox status="success" class="col-md-2">Piernas</nb-checkbox>
+                <nb-checkbox status="success" class="col-md-2">Espalda</nb-checkbox>
+                <nb-checkbox status="success" class="col-md-2">Pecho</nb-checkbox>
+              </div>
+            </nb-card-body>
+          </nb-card>
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+
+
+
+
+
+      <nb-accordion-item>
+        <nb-accordion-item-header>
+          ÁREA II: DOMINANCIA LATERAL
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+          <p>Diagnostica la dominancia lateral, con una serie de actividades
+            con el ojo, mano, oído y pie.</p>
+          <nb-card>
+            <nb-card-header><b>a).</b> Ojo (mira, a través de un tubo o cartulina con orificio).</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>b).</b> Mano (lanza, una pelota, o pintar).</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>c).</b> Oído (escucha, el sonido del reloj, de un radio, teléfono).</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>d).</b> Pie (salta, en un solo pie).</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+
+      <nb-accordion-item>
+        <nb-accordion-item-header>
+          ÁREA III: ORIENTACIÓN
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+          <p><b> 3.1. Temporal</b></p>
+          <nb-card>
+            <nb-card-header><b>a).</b> ¿En este momento es de día o de noche?.</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>b).</b> ¿Que haces por las noches?.</nb-card-header>
+            <nb-card-body>
+              <div class="validation-checkboxes row justify-content-md-center">
+                <input type="text" nbInput fullWidth status="info"  placeholder="Input with Info">
+              </div>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>c).</b> ¿Qué realizaste ayer en la escuela?.</nb-card-header>
+            <nb-card-body>
+              <div class="validation-checkboxes row justify-content-md-center">
+                <input type="text" nbInput fullWidth status="info"  placeholder="Input with Info">
+              </div>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>d).</b> ¿Qué actividad hiciste hoy?.</nb-card-header>
+            <nb-card-body>
+              <div class="validation-checkboxes row justify-content-md-center">
+                <input type="text" nbInput fullWidth status="info"  placeholder="Input with Info">
+              </div>
+            </nb-card-body>
+          </nb-card>
+
+          <p><b> 3.2 Especial</b></p>
+
+          <nb-card>
+            <nb-card-header><b>a).</b> Pon el lápiz debajo de la mesa.</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>b).</b> Pon el lápiz arriba de la silla.</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>c).</b> Pon el lápiz atrás tuyo.</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>d).</b> Pon el lápiz adelante tuyo.</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+
+
+      <nb-accordion-item>
+        <nb-accordion-item-header>
+          ÁREA IV: COORDINACIÓN DINÁMICA
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+
+          <nb-card>
+            <nb-card-header><b>a).</b> Salta en un solo pie.</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>b).</b> Botea la pelota con una mano, con dos manos.</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+
+
+      <nb-accordion-item>
+        <nb-accordion-item-header>
+          ÁREA V: RECEPTIVA AUDITIVA
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+          <nb-card>
+            <nb-card-header><b>a).</b> ¿Los pájaros comen?.</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>b).</b> ¿Los gatos vuelan?.</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>c).</b> ¿Los bebés lloran?.</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>d).</b> ¿Los árboles bailan?.</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>e).</b> ¿Los niños juegan?.</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>f).</b> ¿Los pájaros pintan?.</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>g).</b> ¿Los plátanos escriben?.</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>h).</b> ¿Las personas se casan?.</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>i).</b> ¿Las bicicletas estudian?.</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>j).</b> ¿Las mamás cocinan?.</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>k).</b> ¿El cielo es verde?.</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>l).</b> ¿El sol es caliente?.</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>m).</b> ¿Las flores comen?.</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>n).</b> ¿Los trenes duermen?.</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>o).</b> ¿Los sapos saltan?.</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+
+
+      <nb-accordion-item>
+        <nb-accordion-item-header>
+          ÁREA VI: RECEPTIVO VISUAL
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+          <!-- preguntar -->
+          A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
+          Originally, nebula was a name for any diffuse astronomical object,
+          including galaxies beyond the Milky Way.
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+
+
+      <nb-accordion-item>
+        <nb-accordion-item-header>
+          ÁREA VII: ASOCIACIÓN AUDITIVA
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+          <nb-card>
+            <nb-card-header><b>1).</b> Un pájaro vuela en el aire. Un pez nada en el……………</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>2).</b> Un pan es para comer. La leche es para………………
+             </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>3).</b> El humo sube. La lluvia………………………
+             </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>4).</b> Yo me siento en una silla. Tú duermes en una……………</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>5).</b> El fuego significa calor. El hielo significa………….</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>6).</b> Yo como en un plato. Tú tomas en una………………</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>7).</b> Juan es niño. María es una………………
+             </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>8).</b> Los oídos son para escuchar. Los ojos son para…………</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>9).</b> Yo estoy despierto durante el día. Tú estás dormido durante la ……</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>10).</b> Un conejo es rápido. Una tortuga es…………………..</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+
+
+      <nb-accordion-item>
+        <nb-accordion-item-header>
+          ÁREA VIII: EXPRESIVO MANUAL
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+          <nb-card>
+            <nb-card-header><b>1).</b> Martillo</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>2).</b> Guitarra</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>3).</b> Cuchara</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>4).</b> Teléfono</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>5).</b> Cepillo con pasta de dientes</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>6).</b> Tijeras</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>7).</b> Sacapuntas</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>8).</b> Lápiz</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>9).</b> Cuchillo</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>10).</b> Escoba</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+
+
+      <nb-accordion-item>
+        <nb-accordion-item-header>
+          ÁREA IX: CIERRE AUDITIVO VOCAL
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+          <p>Diagnostica la integración auditivo vocal</p>
+          <nb-card>
+            <nb-card-header><b>1).</b> Azú………..car</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>2).</b> Pier………..na</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>3).</b> Maripo…….sa </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+
+          <nb-card>
+            <nb-card-header><b>4).</b> Monta……..ña</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>5).</b> Carreti…….lla</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+
+
+      <nb-accordion-item>
+        <nb-accordion-item-header>
+          ÁREA X: PRONUNCIACIÓN
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+          <p>Diagnostica la pronunciación con palabras cuyo esquema mental
+            está estructurado</p>
+          <nb-card>
+            <nb-card-header><b>a).</b> Franelógrafo</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>b).</b> Esferográfico</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>c).</b> Triciclo</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>d).</b> Lengua</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>e).</b> Periódico</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>f).</b> Columpio</nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+
+
+      <nb-accordion-item>
+        <nb-accordion-item-header>
+          ÁREA XI: MEMORIA SECUENCIA AUDITIVA
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+          <p>Diagnostica la memoria auditiva del estudiante</p>
+
+          <nb-card>
+            <nb-card-header><b>1).</b> 3 – 2 – 5 </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>2).</b> 2 – 5 – 1 </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>3).</b> 7 – 6 – 2 – 4 </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>4).</b> 1 – 3 – 5 – 2 </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>5).</b> 7 – 4 – 1 – 3 – 2 </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>6).</b> 2 – 5 – 4 – 6 – 9 </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>7).</b> 3 – 2 – 5 – 7 – 8 – 3 </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>8).</b> 9 – 2 – 6 – 7 – 5 – 8 </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>9).</b> 2 – 4 – 6 – 3 – 2 – 5 – 7 </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>10).</b> 5 – 4 – 7 – 9 – 7 – 6 – 2 – 3 </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+
+
+      <nb-accordion-item>
+        <nb-accordion-item-header>
+          ÁREA XII: COORDINACIÓN VISUAL-AUDITIVA-MOTORA (Ritmo)
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+          <p>Diagnostica la coordinación visual auditiva motora, con patrón
+            visual y auditivo.
+            Escucha y repite exactamente (con golpes):
+          </p>
+
+          <nb-card>
+            <nb-card-header><b>1).</b> 000 </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>2).</b> 00 – 00  </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+          <nb-card>
+            <nb-card-header><b>3).</b> 000 – 00 </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+          <nb-card>
+            <nb-card-header><b>4).</b> 00 – 0 – 000 </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+          <nb-card>
+            <nb-card-header><b>5).</b> 0 – 000 – 0 </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+          <nb-card>
+            <nb-card-header><b>6).</b> 0 – 00 – 00 – 000 </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+          <nb-card>
+            <nb-card-header><b>7).</b> 00 – 000 – 000 – 0000 </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+
+
+      <nb-accordion-item>
+        <nb-accordion-item-header>
+          ÁREA XIII: MEMORIA VISUAL
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+          A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
+          Originally, nebula was a name for any diffuse astronomical object,
+          including galaxies beyond the Milky Way.
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+
+
+
+      <nb-accordion-item>
+        <nb-accordion-item-header>
+          ÁREA XIV: DISCRIMINACIÓN AUDITIVA
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+          <p>El estudiante debe repetir las dos palabras juntas de cada ítem, luego de haber sido
+            pronunciadas por el examinador.</p>
+
+          <nb-card>
+            <nb-card-header><b>a).</b> pato – dato </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>b).</b> cama – dama </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>c).</b> caballo – cabello </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>d).</b> rata – lata </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>e).</b> hombre – hambre </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>f).</b> mesa – misa </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>g).</b> mano – mono </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>h).</b> tía – día </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>i).</b> casa – pasa </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+
+          <nb-card>
+            <nb-card-header><b>j).</b> pana – lana </nb-card-header>
+            <nb-card-body>
+              <nb-radio-group class="validation-checkboxes row justify-content-md-center">
+                <nb-radio class="col-md-2">Si</nb-radio>
+                <nb-radio class="col-md-2">No</nb-radio>
+              </nb-radio-group>
+            </nb-card-body>
+          </nb-card>
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+
+
+
+      <nb-accordion-item>
+        <nb-accordion-item-header>
+          ÁREA XV: COORDINACIÓN VISOMOTORA
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+          A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
+          Originally, nebula was a name for any diffuse astronomical object,
+          including galaxies beyond the Milky Way.
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+
+
+      <nb-accordion-item>
+        <nb-accordion-item-header>
+          ÁREA XVI: ATENCION Y FATIGA
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+          A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
+          Originally, nebula was a name for any diffuse astronomical object,
+          including galaxies beyond the Milky Way.
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+
+
+      <nb-accordion-item>
+        <nb-accordion-item-header>
+          ÁREA XVII: DESARROLLO MANUAL
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+          A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
+          Originally, nebula was a name for any diffuse astronomical object,
+          including galaxies beyond the Milky Way.
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+    </nb-accordion>
+  </div>
+</div>
